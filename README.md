@@ -1,3 +1,3 @@
 
-![Circuit](/images/Circuit.png)
-![Components](/images/Components.png)
+![Circuit](/images/Setup.png)
+![Components](/images/Circuit-and-components.png)
