@@ -1,2 +1,3 @@
 
-![GitHub Logo](/images/Circuit.png)
+![Circuit](/images/Circuit.png)
+![Components](/images/Components.png)
