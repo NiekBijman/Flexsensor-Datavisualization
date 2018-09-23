@@ -1,12 +1,14 @@
 # Flexsensor Datavisualization
 This project visualizes flexsensor data using the ESP8266_ESP-01 to connect to a WiFi network which sends a HTTP request to the Thingspeak API.
 
-![Flexible](/images/flexData.gif)
+![Flexible](https://drive.google.com/drive/folders/1anf7PNQVYAo4euUr57q-VzIiptEWxr6l)
+
 
 ## 1. Create the circuit. 
 Find the needed components in this link: https://www.circuito.io/app?components=512,8606,11021,13678. <br/>
+You will need to solder pins to the logic level converter. 
 
-**NOTE:** The logic level converter is needed to convert the 5V arduino signal to a 3.3V signal. The 3.3V port on the Arduino can generate voltage spikes that could damage your ESP8266 board, this is why the level converter is utilized. 
+**NOTE:** The logic level converter is needed to convert the 5V arduino signal to a 3.3V signal. The 3.3V port on the Arduino can generate voltage spikes that could damage your ESP8266 board.
 
 ![Components](/images/Circuit-and-components.png)
 
