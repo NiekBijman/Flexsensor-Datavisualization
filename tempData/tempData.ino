@@ -8,7 +8,6 @@
  https://medium.com/@cgrant/using-the-esp8266-wifi-module-with-arduino-uno-publishing-to-thingspeak-99fc77122e82
 */
 
-
 //NOTE: I use a local config.h file which is not in the repository to store my password, SSID and API_keys. 
 //Uncomment '#include "config.h"' and fill in your own Wifi and API information below 
 #include "config.h"
