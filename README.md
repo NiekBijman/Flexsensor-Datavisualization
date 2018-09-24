@@ -1,14 +1,17 @@
 # Visualize data from sensors
 ![Flexible](/images/flexData.v3.gif)
 
-This project visualizes temperature and flexsensor data using the ESP8266_ESP-01 and Arduino to connect to a WiFi network which sends a HTTP request to the Thingspeak API. You can sent a request every 15 seconds. 
+This project visualizes temperature and flexsensor data using the ESP8266_ESP-01 and Arduino to connect to a WiFi network which sends an HTTP request to the Thingspeak API. You can sent an HTTP request every 15 seconds. 
 
 ## Hardware
 #### Create the circuit
-Choose the type of data you would like to visualize. You can choose any sensor you would like. I have examples for the *DHT11 Temperature sensor* and *FlexSensor 4.5*. You can find the components in this link: https://www.circuito.io/app?components=512,8606,11021,13678. <br/>
-You will need to solder pins to the logic level converter. 
+Choose the type of data you would like to visualize. I have examples for the *DHT11 Temperature sensor* and *FlexSensor 4.5*. You can find the components in this link: 
 
-![Components](/images/Circuit-and-components.png)
+https://www.circuito.io/app?components=512,8606,11021,13678. <br/>
+
+To plug the ESP8266-ESP-01 in a breadboard you need male-to-female jumper wires. You will need to solder male headers to the logic level converter. If you haven't done this before check out this instruction video for THT (through hole soldering) https://goo.gl/GJt3Qc.
+
+![Components](/images/Circuit-and-components.v2.png)
 **NOTE:** The logic level converter is needed to convert the 5V arduino signal to a 3.3V signal. The 3.3V port on the Arduino can generate voltage spikes that could damage your ESP8266 board.
 
 ## Software
@@ -17,7 +20,7 @@ You will need to solder pins to the logic level converter.
 ![Circuit](/images/Thingspeak-Write-API-key.png)
 
 #### General
-* In the Serial Monitor set the Baudrate to *115200* and select the *"Both NL & CR"* in the *'No Line Ending'* dropdown. These settings make sure that you can read the Serial.println() in the sketch. 
+* In the Serial Monitor set the Baudrate to *115200* and select the *"Both NL & CR"* in the *'No Line Ending'* dropdown. These settings make sure that you can read the data that's being printed to the Serial monitor. 
 * Enter your **wifi-SSID**, **password** and **Write API key** from Thingspeak in the .ino file
 
 #### Temperature Sensor
