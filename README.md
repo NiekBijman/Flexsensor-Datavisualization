@@ -7,7 +7,7 @@ This project visualizes temperature and flexsensor data using the ESP8266_ESP-01
 #### Create the circuit
 Choose the type of data you would like to visualize. I have examples for the *DHT11 Temperature sensor* and *FlexSensor 4.5*. You can find the components in this link: 
 
-https://www.circuito.io/app?components=512,8606,11021,13678. <br/>
+https://www.circuito.io/app?components=512,8606,10167,11021,13678. <br/>
 
 To plug the ESP8266-ESP-01 in a breadboard you need male-to-female jumper wires. You will need to solder male headers to the logic level converter. If you haven't done this before check out this instruction video for THT (through hole soldering) https://goo.gl/GJt3Qc.
 
