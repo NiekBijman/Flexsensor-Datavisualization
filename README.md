@@ -5,13 +5,17 @@ This project visualizes temperature and flexsensor data using the ESP8266_ESP-01
 
 ## Hardware
 #### Create the circuit
-Choose the type of data you would like to visualize. I have examples for the *DHT11 Temperature sensor* and *FlexSensor 4.5*. You can find the components in this link: 
+Choose the type of data you would like to visualize. I have examples for the *DHT11 Temperature sensor* and *FlexSensor 4.5*.
 
+You need to know the following to make the ESP8266-ESP-01 and level converter work: 
+* To plug the ESP8266-ESP-01 in a breadboard you need male-to-female jumper wires. 
+* You will need a 12V external power supply that can provide at least 300mA, the USB power supply from the Arduino can only provide 150mA.
+* You will need to solder male headers to the logic level converter. If you haven't done this before check out this hookup guide from sparkfun (through hole soldering) https://learn.sparkfun.com/tutorials/bi-directional-logic-level-converter-hookup-guide.
+
+ You can find the BOM-list in this link: (you can remove the sensors that you don't need for your project) 
 https://www.circuito.io/app?components=512,8606,10167,11021,13678. <br/>
 
-To plug the ESP8266-ESP-01 in a breadboard you need male-to-female jumper wires. You will need to solder male headers to the logic level converter. If you haven't done this before check out this instruction video for THT (through hole soldering) https://goo.gl/GJt3Qc.
-
-![Components](/images/Circuit-and-components.v2.png)
+![Components](/images/Circuit-and-components.v3.png)
 **NOTE:** The logic level converter is needed to convert the 5V arduino signal to a 3.3V signal. The 3.3V port on the Arduino can generate voltage spikes that could damage your ESP8266 board.
 
 ## Software
